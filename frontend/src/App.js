@@ -85,6 +85,7 @@ function App() {
             <br/>
             {nft_metadata !== null && (
               <p>
+                <h3>NFT Successfully Created!</h3>
                 NFT: {nft_metadata.extension.name}
                 <br/>
                 <br/>
