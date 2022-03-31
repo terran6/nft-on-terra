@@ -4,7 +4,7 @@ NFTs have been generating a lot of buzz in the blockchain community, particularl
 
 In this tutorial, we will go over how you may mint your own unique NFT on the Terra blockchain. This allows you to create your own form of digital art for sale to millions of users that are currently utilizing the Terra ecosystem.
 
-If you would like to view available collections that are on sale on the Terra blockcahin, you may navigate to the [randomearth marketplace](https://randomearth.io/collections).
+If you would like to view available collections that are on sale on the Terra blockchain, you may navigate to the [randomearth marketplace](https://randomearth.io/collections).
 
 ## Getting Started
 
@@ -14,7 +14,9 @@ We will also install [localterra](https://github.com/terra-money/LocalTerra), a 
 
 After installing the above dependencies, you may clone this repository to the directory of your choice using the following command:
 
+<div align="center">
 `git clone https://github.com/collazo6/nft_on_terra.git`
+</div>
 
 Change directory into the cloned repository and run the command `npm install` in your terminal to install all relevant Node dependencies. If you have not installed npm (Node Package Manager) on your computer, you may find instructions on how to do so based on your operating system [here](https://kinsta.com/blog/how-to-install-node-js/).
 <br/>
@@ -24,12 +26,10 @@ Change directory into the cloned repository and run the command `npm install` in
 
 There are a few changes we have to make to our contract before we may deploy and create our first NFT. To test this functionality, we will be utilizing the preconfigured testing wallet `test1`. This wallet will be available on any Terra Station generated wallet. In order to view our test1 wallet, we may navigate to localterra on our Terra Station extension on Google Chrome and switch our wallet to the preconfigured testing wallet.
 <br/>
-<br/>
 
 ### Step 1
 
 Open the Terra Station extension on your Google Chrome web browser. Click on the settings icon in the upper right-hand corner and select the **localterra** network.
-<br/>
 <br/>
 
 <div align="center">
@@ -40,7 +40,6 @@ Open the Terra Station extension on your Google Chrome web browser. Click on the
 ### Step 2
 
 Next, we will click on _Switch wallet_, then click on the drop down menu that appears in the subsequent popup and finally select the test1 wallet from the drop down list that appears.
-<br/>
 <br/>
 
 <div align="center">
