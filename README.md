@@ -14,9 +14,7 @@ We will also install [localterra](https://github.com/terra-money/LocalTerra), a 
 
 After installing the above dependencies, you may clone this repository to the directory of your choice using the following command:
 
-<div align="center">
 `git clone https://github.com/collazo6/nft_on_terra.git`
-</div>
 
 Change directory into the cloned repository and run the command `npm install` in your terminal to install all relevant Node dependencies. If you have not installed npm (Node Package Manager) on your computer, you may find instructions on how to do so based on your operating system [here](https://kinsta.com/blog/how-to-install-node-js/).
 <br/>
@@ -109,7 +107,7 @@ Once the contract deployment is successfully completed, you may change into the 
 
 As shown above, you may fill out all of the necessary information on the form to mint your first NFT. Token ID may be any number that you would like to correspond to the ID of the new NFT. The owner address is the wallet address which will be the owner of the newly minted NFT (our test1 wallet address in this case). You may then enter a name for the NFT as well as input its corresponding URL.
 
-In general, many prefer to host their NFTs on IPFS (Interplanetary File System). You may use a variety of resources in order to post an NFT on IPFS. One service that you may use is [pinata](https://www.pinata.cloud/). In this example I have copied an image address of a free to use image from Google Images.
+In general, many prefer to host their NFTs on IPFS (Interplanetary File System). You may use a variety of resources in order to post an NFT on IPFS. One service that you may use is [pinata](https://www.pinata.cloud/). In this example I have copied an image address of a copyright free image from [Pixabay](https://pixabay.com/).
 
 Now we are ready to mint our NFT! After we click on the _Mint NFT_ button, we will be presented with information on our newly minted NFT!
 <br/>
