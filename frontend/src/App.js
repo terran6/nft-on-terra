@@ -32,11 +32,11 @@ function App() {
   }
 
   return (
-    <div className="App">
-      <header className="App-header">
-        <h2 style={{ display: 'inline' }}>
+    <div className='App'>
+      <header className='App-header' style={{ backgroundColor: 'black', fontFamily: 'Gill Sans' }}>
+        <h3 style={{ display: 'inline', color: 'orange' }}>
           Mint Your Own NFT!
-        </h2>
+        </h3>
         {updating && (
           <div>
             Minting NFT...
@@ -44,52 +44,53 @@ function App() {
         )}
         {status === WalletStatus.WALLET_CONNECTED && (
           <div style={{ display: 'inline' }}>
-            <label style={{ fontSize: "20px"}}>Token ID : </label>
+            <label style={{ color: 'lightblue', fontSize: '20px', width: '80px', display: 'inline-block', textAlign: 'left' }}>ID : </label>
             <input
-              type="number"
+              type='number'
               onChange={(e) => setTokenId(e.target.value)}
               value={token_id}
+              style={{ backgroundColor: '#201E23' }}
             />
             <br/>
-            <label style={{ fontSize: "20px" }}>NFT Owner Address : </label>
+            <label style={{ color: 'lightblue', fontSize: '20px', width: '80px', display: 'inline-block', textAlign: 'left' }}>Owner : </label>
             <input
-              type="text"
+              type='text'
               onChange={(e) => setAddress(e.target.value)}
               value={owner_address}
+              style={{ backgroundColor: '#201E23' }}
             />
             <br/>
-            <label style={{ fontSize: "20px" }}>NFT Name : </label>
+            <label style={{ color: 'lightblue', fontSize: '20px', width: '80px', display: 'inline-block', textAlign: 'left' }}>Name : </label>
             <input
-              type="text"
+              type='text'
               onChange={(e) => setNFTName(e.target.value)}
               value={nft_name}
+              style={{ backgroundColor: '#201E23' }}
             />
             <br/>
-            <label style={{ fontSize: "20px" }}>NFT URL : </label>
+            <label style={{ color: 'lightblue', fontSize: '20px', width: '80px', display: 'inline-block', textAlign: 'left' }}>URL : </label>
             <input
-              type="text"
+              type='text'
               onChange={(e) => setImageURL(e.target.value)}
               value={image_url}
+              style={{ backgroundColor: '#201E23' }}
             />
             <br/>
             <br/>
             <button 
               onClick={onClickMint} 
-              type="button"
-              style={{ backgroundColor: "green", height: "40px", width: "100px", fontWeight: "bold" }}
+              type='button'
+              style={{ backgroundColor: 'green', height: '40px', width: '100px', fontWeight: 'bold', fontFamily: 'Gill Sans'}}
             >
               {' '}
               Mint NFT{' '}
             </button>
             <br/>
-            <br/>
             {nft_metadata !== null && (
               <p>
-                <h3>NFT Successfully Created!</h3>
-                NFT: {nft_metadata.extension.name}
-                <br/>
-                <br/>
-                <img style={{maxWidth: "200px"}} src={nft_metadata.extension.image}></img>
+                <h4 style={{ color: 'lightgreen' }}>NFT Successfully Minted!</h4>
+                <h5 style={{ color: 'gold' }}>NFT : {nft_metadata.extension.name}</h5>
+                <img style={{ maxWidth: '200px' }} src={nft_metadata.extension.image}></img>
               </p>
             )}
           </div>

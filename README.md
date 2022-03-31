@@ -8,7 +8,7 @@ If you would like to view available collections that are on sale on the Terra bl
 
 ## Getting Started
 
-These instructions assume that you have already set up a [Terra Station wallet](https://docs.terra.money/docs/learn/terra-station/README.html) in order to interact with the Terra blockchain. You will also need to have installed the [Terra Station extension](https://docs.terra.money/docs/learn/terra-station/download/terra-station-extension.html) on Google Chrome to confirm transactions in our application.
+These instructions assume that you have already set up a Terra Station wallet in order to interact with the Terra blockchain. You may create a new wallet on the [Terra Station extension](https://docs.terra.money/docs/learn/terra-station/download/terra-station-extension.html) on Google Chrome which you will need to install in order to confirm transactions on our application.
 
 We will also install [localterra](https://github.com/terra-money/LocalTerra), a Terra blockchain and ecosystem which runs on your personal computer for testing, and [terrain](https://github.com/terra-money/terrain), a Terra development environment for smart contract development. Be sure to follow the instructions to install and run all applications which are dependencies for both localterra as well as terrain.
 
@@ -22,7 +22,7 @@ Change directory into the cloned repository and run the command `npm install` in
 
 ## Wallet Setup
 
-There are a few changes we have to make to our contract before we may deploy and create our first NFT. To test this functionality, we will be utilizing the preconfigured testing wallet `test1`. This wallet will be available on any Terra Station generated wallet. In order to view our test1 wallet, we may navigate to localterra on our Terra Station extension on Google Chrome and switch our wallet to the preconfigured testing wallet.
+There are a few changes we have to make before we may deploy our smart contract and create our first NFT. To test our smart contract functionality, we will be utilizing the preconfigured testing wallet `test1`. This wallet will be available on any Terra Station generated wallet. In order to view our test1 wallet, we may navigate to localterra on our Terra Station extension on Google Chrome and switch our wallet to the preconfigured testing wallet.
 <br/>
 
 ### Step 1
@@ -48,7 +48,7 @@ Next, we will click on _Switch wallet_, then click on the drop down menu that ap
   <img src="readme_images/switch_wallet2.png" alt="Test1 wallet on the Terra Station extension" style="400px; height: 500px;"/>
 </div>
 <br/>
-Now that we have successfully switched to our testing wallet on localterra, we have setup our environment to be able to mint our first NFT.
+Now that we have successfully switched to our testing wallet on localterra, we have setup our environment to be able to deploy our smart contract.
 <br/>
 <br/>
 
@@ -96,12 +96,12 @@ Once localterra is up and running, run the following command in your terminal in
 
 ### Mint an NFT!
 
-Once the contract deployment is successfully completed, you may change into the `frontend` directory. From here, you may run the command `npm start` to start up our NFT minting application.
+Once the contract deployment is successfully completed, you may change into the `frontend` directory. From here, you may run `npm install` to install all necessary Node dependencies as well as the command `npm start` to start up our NFT minting application.
 <br/>
 <br/>
 
 <div align="center">
-  <img src="readme_images/application.png" alt="Localterra on the Terra Station extension" style="width: 436px; height: 400px;"/>
+  <img src="readme_images/application.png" alt="Localterra on the Terra Station extension" style="width: 400px; height: 332px;"/>
 </div>
 <br/>
 
@@ -114,6 +114,6 @@ Now we are ready to mint our NFT! After we click on the _Mint NFT_ button, we wi
 <br/>
 
 <div align="center">
-  <img src="readme_images/nft_minted.png" alt="Localterra on the Terra Station extension" style="width: 400px; height: 683px;"/>
+  <img src="readme_images/nft_minted.png" alt="Localterra on the Terra Station extension" style="width: 400px; height: 729.5px;"/>
 </div>
 <br/>
