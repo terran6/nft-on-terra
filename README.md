@@ -101,11 +101,11 @@ Once the contract deployment is successfully completed, you may change into the 
 <br/>
 
 <div align="center">
-  <img src="readme_images/application.png" alt="Localterra on the Terra Station extension" style="width: 400px; height: 332px;"/>
+  <img src="readme_images/application.png" alt="Localterra on the Terra Station extension" style="width: 400px; height: 291.4px;"/>
 </div>
 <br/>
 
-As shown above, you may fill out all of the necessary information on the form to mint your first NFT. Token ID may be any number that you would like to correspond to the ID of the new NFT. The owner address is the wallet address which will be the owner of the newly minted NFT (our test1 wallet address in this case). You may then enter a name for the NFT as well as input its corresponding URL.
+As shown above, you may fill out all of the necessary information on the form to mint your first NFT. ID may be any number that you would like to correspond to the ID of the new NFT. The Owner is the wallet address which will be the owner of the newly minted NFT (our test1 wallet address in this case). You may then enter a name for the NFT as well as input its corresponding URL.
 
 In general, many prefer to host their NFTs on IPFS (Interplanetary File System). You may use a variety of resources in order to post an NFT on IPFS. One service that you may use is [pinata](https://www.pinata.cloud/). In this example I have copied an image address of a copyright free image from [Pixabay](https://pixabay.com/).
 
@@ -114,6 +114,6 @@ Now we are ready to mint our NFT! After we click on the _Mint NFT_ button, we wi
 <br/>
 
 <div align="center">
-  <img src="readme_images/nft_minted.png" alt="Localterra on the Terra Station extension" style="width: 400px; height: 729.5px;"/>
+  <img src="readme_images/nft_minted.png" alt="Localterra on the Terra Station extension" style="width: 400px; height: 705.05px;"/>
 </div>
 <br/>

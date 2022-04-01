@@ -34,7 +34,7 @@ function App() {
   return (
     <div className='App'>
       <header className='App-header' style={{ backgroundColor: 'black', fontFamily: 'Gill Sans' }}>
-        <h3 style={{ display: 'inline', color: 'orange' }}>
+        <h3 style={{ display: 'inline', color: '#A3AB78' }}>
           Mint Your Own NFT!
         </h3>
         {updating && (
@@ -44,7 +44,7 @@ function App() {
         )}
         {status === WalletStatus.WALLET_CONNECTED && (
           <div style={{ display: 'inline' }}>
-            <label style={{ color: 'lightblue', fontSize: '20px', width: '80px', display: 'inline-block', textAlign: 'left' }}>ID : </label>
+            <label style={{ color: '#10454F', fontSize: '20px', width: '80px', display: 'inline-block', textAlign: 'left' }}>ID : </label>
             <input
               type='number'
               onChange={(e) => setTokenId(e.target.value)}
@@ -52,7 +52,7 @@ function App() {
               style={{ backgroundColor: '#201E23' }}
             />
             <br/>
-            <label style={{ color: 'lightblue', fontSize: '20px', width: '80px', display: 'inline-block', textAlign: 'left' }}>Owner : </label>
+            <label style={{ color: '#10454F', fontSize: '20px', width: '80px', display: 'inline-block', textAlign: 'left' }}>Owner : </label>
             <input
               type='text'
               onChange={(e) => setAddress(e.target.value)}
@@ -60,7 +60,7 @@ function App() {
               style={{ backgroundColor: '#201E23' }}
             />
             <br/>
-            <label style={{ color: 'lightblue', fontSize: '20px', width: '80px', display: 'inline-block', textAlign: 'left' }}>Name : </label>
+            <label style={{ color: '#10454F', fontSize: '20px', width: '80px', display: 'inline-block', textAlign: 'left' }}>Name : </label>
             <input
               type='text'
               onChange={(e) => setNFTName(e.target.value)}
@@ -68,7 +68,7 @@ function App() {
               style={{ backgroundColor: '#201E23' }}
             />
             <br/>
-            <label style={{ color: 'lightblue', fontSize: '20px', width: '80px', display: 'inline-block', textAlign: 'left' }}>URL : </label>
+            <label style={{ color: '#10454F', fontSize: '20px', width: '80px', display: 'inline-block', textAlign: 'left' }}>URL : </label>
             <input
               type='text'
               onChange={(e) => setImageURL(e.target.value)}
@@ -88,8 +88,8 @@ function App() {
             <br/>
             {nft_metadata !== null && (
               <p>
-                <h4 style={{ color: 'lightgreen' }}>NFT Successfully Minted!</h4>
-                <h5 style={{ color: 'gold' }}>NFT : {nft_metadata.extension.name}</h5>
+                <h4 style={{ color: '#A3AB78' }}>NFT Successfully Minted!</h4>
+                <h5 style={{ color: '#10454F' }}>NFT : {nft_metadata.extension.name}</h5>
                 <img style={{ maxWidth: '200px' }} src={nft_metadata.extension.image}></img>
               </p>
             )}
