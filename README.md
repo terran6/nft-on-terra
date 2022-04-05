@@ -41,7 +41,7 @@ Next, we will click on _Switch wallet_, then click on the drop down menu that ap
 <br/>
 
 <div align="center">
-  <img src="readme_images/switch_wallet.png" alt="Switch Wallet" style="400px; height: 501.044px;"/>
+  <img src="readme_images/switch_wallet.png" alt="Switch Wallet" style="400px; height: 501px;"/>
 </div>
 <br/>
 <div align="center">
@@ -71,7 +71,7 @@ We must first update the desired _name_ and _symbol_ that will correspond to our
 <br/>
 
 <div align="center">
-  <img src="readme_images/copy_address.png" alt="Copy Wallet Address" style="400px; height: 501.044px;"/>
+  <img src="readme_images/copy_address.png" alt="Copy Wallet Address" style="400px; height: 501px;"/>
 </div>
 <br/>
 <br/>
