@@ -1,4 +1,5 @@
 import { useWallet, WalletStatus } from '@terra-dev/use-wallet'
+import Button from '@mui/material/Button'
 
 export const ConnectWallet = () => {
   const {
@@ -35,9 +36,23 @@ export const ConnectWallet = () => {
         </>
       )}
       {status === WalletStatus.WALLET_CONNECTED && (
-        <button onClick={() => disconnect()} type="button">
-          Disconnect
-        </button>
+        <div style={{ 
+          display:'flex', 
+          justifyContent:'center', 
+          alignItems:'center', 
+          paddingTop: '20px' 
+        }}>
+          <Button
+            style={{
+              backgroundColor: "#B9B6B5",
+              fontSize: "12px"
+            }}
+            onClick={() => disconnect()}
+            variant='contained'
+            fontSize='small'>
+              Disconnect Wallet
+          </Button>
+        </div>
       )}
     </div>
   )
