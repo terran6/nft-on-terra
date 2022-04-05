@@ -12,7 +12,13 @@ export const ConnectWallet = () => {
   } = useWallet()
 
   return (
-    <div>
+    <div style={{
+      display: 'flex',
+      flexWrap: 'wrap',
+      justifyContent: 'center',
+      alignItems: 'center',
+      padding: '10px'
+    }}>
       {status === WalletStatus.WALLET_NOT_CONNECTED && (
         <>
           {availableInstallTypes.map((connectType) => (
