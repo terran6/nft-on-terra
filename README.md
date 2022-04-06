@@ -25,7 +25,7 @@ Change directory into the cloned repository and run the command `npm install` in
 There are a few changes we have to make before we may deploy our smart contract and create our first NFT. To test our smart contract functionality, we will be utilizing the preconfigured testing wallet `test1`. This wallet will be available on any Terra Station generated wallet. In order to view our test1 wallet, we may navigate to localterra on our Terra Station extension on Google Chrome and switch our wallet to the preconfigured testing wallet.
 <br/>
 
-### Step 1
+### Change Network to LocalTerra
 
 Open the Terra Station extension on your Google Chrome web browser. Click on the settings icon in the upper right-hand corner and select the **localterra** network.
 
@@ -33,7 +33,7 @@ Open the Terra Station extension on your Google Chrome web browser. Click on the
   <img src="readme_images/extension_localterra.png" alt="Switch to LocalTerra" style="width: 400px; height: 476.33px; padding: 40px"/>
 </div>
 
-### Step 2
+### Switch to Test Wallet
 
 Next, we will click on _Switch wallet_, then click on the drop down menu that appears in the subsequent popup and finally select the test1 wallet from the drop down list that appears.
 
