@@ -28,26 +28,20 @@ There are a few changes we have to make before we may deploy our smart contract 
 ### Step 1
 
 Open the Terra Station extension on your Google Chrome web browser. Click on the settings icon in the upper right-hand corner and select the **localterra** network.
-<br/>
 
 <div align="center">
-  <img src="readme_images/extension_localterra.png" alt="Switch to LocalTerra" style="width: 400px; height: 476.33px;"/>
+  <img src="readme_images/extension_localterra.png" alt="Switch to LocalTerra" style="width: 400px; height: 476.33px; padding: 40px"/>
 </div>
-<br/>
 
 ### Step 2
 
 Next, we will click on _Switch wallet_, then click on the drop down menu that appears in the subsequent popup and finally select the test1 wallet from the drop down list that appears.
-<br/>
 
 <div align="center">
-  <img src="readme_images/switch_wallet.png" alt="Switch Wallet" style="400px; height: 501px;"/>
+  <img src="readme_images/switch_wallet.png" alt="Switch Wallet" style="400px; height: 501px; padding: 40px"/>
+  <img src="readme_images/test_wallet.png" alt="Select Test Wallet" style="400px; height: 500px; padding: 40px"/>
 </div>
-<br/>
-<div align="center">
-  <img src="readme_images/test_wallet.png" alt="Select Test Wallet" style="400px; height: 500px;"/>
-</div>
-<br/>
+
 Now that we have successfully switched to our testing wallet on localterra, we have setup our environment to be able to deploy our smart contract.
 <br/>
 <br/>
@@ -67,14 +61,10 @@ Before we may deploy our contract and begin minting our NFT, we must make a chan
 ```
 
 We must first update the desired _name_ and _symbol_ that will correspond to our minted NFT. Also, the _minter_ will have to be updated to our test1 wallet address. This may be copied directly from our Terra Station extension.
-<br/>
-<br/>
 
 <div align="center">
-  <img src="readme_images/copy_address.png" alt="Copy Wallet Address" style="400px; height: 501px;"/>
+  <img src="readme_images/copy_address.png" alt="Copy Wallet Address" style="400px; height: 501px; padding: 40px"/>
 </div>
-<br/>
-<br/>
 
 In this tutorial, we will be uploading an NFT of Luna, the native token of Terraform Labs, to our Cryptocurrency Token NFTs collection. Therefore, we may update the parameters in the instantiate message to the following:
 
@@ -97,35 +87,28 @@ Once localterra is up and running, run the following command in another tab of y
 ### Mint an NFT!
 
 Once the contract deployment is successfully completed, you may change into the `frontend` directory. From here, you must run `npm install` to install all necessary Node dependencies. Finally, you may run the command `npm start` to start up our NFT minting application.
-<br/>
-<br/>
 
 <div align="center">
-  <img src="readme_images/application.png" alt="NFT Minting Application" style="width: 400px; height: 244.556px;"/>
+  <img src="readme_images/application.png" alt="NFT Minting Application" style="width: 400px; height: 244.556px; padding: 40px"/>
 </div>
-<br/>
 
 As shown above, you may fill out all of the necessary information on the form to mint your first NFT. ID may be any value that you would like to correspond to the ID of the new NFT. The Owner Address is the wallet address which will be the owner of the newly minted NFT (our test1 wallet address in this case). You may then enter a name for the NFT as well as input its corresponding URL.
 
 In general, many prefer to host their NFTs on IPFS (Interplanetary File System). You may use a variety of resources in order to post an NFT on IPFS. One service that you may use is [pinata](https://www.pinata.cloud/). In this example, I have used an image available on [Terra's website](https://www.terra.money/).
 
 Now we are ready to mint our NFT! Click on the _Mint NFT_ button which will make our Terra Station extension pop up to request confirmation of the transaction. Click on the _Post_ button from our Terra Station Extension and we will be presented with information on our newly minted NFT!
-<br/>
-<br/>
 
 <div align="center">
-  <img src="readme_images/nft_minted.png" alt="Minted NFT" style="width: 400px; height: 481.742px;"/>
+  <img src="readme_images/nft_minted.png" alt="Minted NFT" style="width: 400px; height: 481.742px; padding: 40px"/>
 </div>
-<br/>
 
 ## Interact with your new NFT
 
 Now that we have minted our NFT, we may interact with it via the [NFT page](https://station.terra.money/nft) on the Terra Station website. If your wallet is not already connected, make sure to click on the `Connect` button in the upper right-hand corner of the screen and select your Terra Station Wallet.
 
 <div align="center">
-  <img src="readme_images/connect_wallet.png" alt="Connect Wallet" style="width: 400px; height: 355.56px;"/>
+  <img src="readme_images/connect_wallet.png" alt="Connect Wallet" style="width: 400px; height: 355.56px; padding: 40px"/>
 </div>
-<br/>
 
 Next, click on `Add tokens >` and you will be presented with a pop-up box with a search bar. In this search bar, we will be pasting in our contract address. This can be found in this repository in the `refs.terrain.json` file next to the **default** key.
 
@@ -145,15 +128,13 @@ Next, click on `Add tokens >` and you will be presented with a pop-up box with a
 We can copy this address and paste it into the search bar and click on the `+` button located next to the name of our NFT collection.
 
 <div align="center">
-  <img src="readme_images/nft_search.png" alt="Search NFT Collection" style="width: 400px; height: 178.46px;"/>
+  <img src="readme_images/nft_search.png" alt="Search NFT Collection" style="width: 400px; height: 178.46px; padding: 40px"/>
 </div>
-<br/>
 
 Now, we may close out this window and we are presented with our NFT collection.
 
 <div align="center">
-  <img src="readme_images/nft_station.png" alt="NFT Collection" style="width: 400px; height: 100.173px;"/>
+  <img src="readme_images/nft_station.png" alt="NFT Collection" style="width: 400px; height: 100.173px; padding: 40px"/>
 </div>
-<br/>
 
 From here, we may `View` relevant information about our NFT as well as `Send` our NFT to any wallet addresses that we would like.
