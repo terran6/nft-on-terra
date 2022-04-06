@@ -1,6 +1,6 @@
 # How to Mint Your Very Own NFT on the Terra Blockchain
 
-NFTs have been generating a lot of buzz in the blockchain community, particularly with their use in trading digital art. NFTs, or non-fungible tokens, are unique digital items that may be showcased and bought/sold on the blockcahin. Buying one of these unique items gives you ownership over the unique digital creation, somewhat similar to buying a distinct painting or art piece.
+NFTs have been generating a lot of buzz in the blockchain community, particularly with their use in trading digital art. NFTs, or non-fungible tokens, are unique digital items that may be showcased and bought/sold on the blockchain. Buying one of these unique items gives you ownership over the unique digital creation, somewhat similar to buying a distinct painting or art piece.
 
 In this tutorial, we will go over how you may mint your own unique NFT on the Terra blockchain. This allows you to create your own form of digital art for sale to millions of users that are currently utilizing the Terra ecosystem.
 
@@ -109,7 +109,7 @@ As shown above, you may fill out all of the necessary information on the form to
 
 In general, many prefer to host their NFTs on IPFS (Interplanetary File System). You may use a variety of resources in order to post an NFT on IPFS. One service that you may use is [pinata](https://www.pinata.cloud/). In this example, I have used an image available on [Terra's website](https://www.terra.money/).
 
-Now we are ready to mint our NFT! After we click on the _Mint NFT_ button, we will be presented with information on our newly minted NFT!
+Now we are ready to mint our NFT! Click on the _Mint NFT_ button which will make our Terra Station extension pop up to request confirmation of the transaction. Click on the _Post_ button from our Terra Station Extension and we will be presented with information on our newly minted NFT!
 <br/>
 <br/>
 
@@ -127,7 +127,7 @@ Now that we have minted our NFT, we may interact with it via the [NFT page](http
 </div>
 <br/>
 
-Next, click on `Add tokens >` and you will be presented with a pop-up box with a search bar. In this search bar, we will be pasting in our contract address. This can be found in this repository in the `refs.terrain.json` file next to the **"default"** key.
+Next, click on `Add tokens >` and you will be presented with a pop-up box with a search bar. In this search bar, we will be pasting in our contract address. This can be found in this repository in the `refs.terrain.json` file next to the **default** key.
 
 ```
 {
@@ -142,7 +142,7 @@ Next, click on `Add tokens >` and you will be presented with a pop-up box with a
 }
 ```
 
-We can copy this address and add it to the search bar and then click on the `+` button located next to the name of our NFT collection.
+We can copy this address and paste it into the search bar and click on the `+` button located next to the name of our NFT collection.
 
 <div align="center">
   <img src="readme_images/nft_search.png" alt="Search NFT Collection" style="width: 400px; height: 178.46px;"/>
@@ -155,4 +155,5 @@ Now, we may close out this window and we are presented with our NFT collection.
   <img src="readme_images/nft_station.png" alt="NFT Collection" style="width: 400px; height: 100.173px;"/>
 </div>
 <br/>
+
 From here, we may `View` relevant information about our NFT as well as `Send` our NFT to any wallet addresses that we would like.

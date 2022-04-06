@@ -169,7 +169,7 @@ function App() {
           </div>
         )}
         {error !== '' && (
-          <p>
+          <span>
             <Divider />
             <br/>
             <Collapse in={open}>
@@ -201,15 +201,19 @@ function App() {
             }}>
               <Typography
                 variant='h1'
-                style={{ color: 'black', fontWeight: '200', fontSize: '160px' }}
+                style={{
+                  color: 'black',
+                  fontWeight: '200',
+                  fontSize: '160px' 
+                }}
                 padding='5px'>
                 :(
               </Typography>
             </div>
-          </p>
+          </span>
         )}
         {nft_metadata !== null && (
-          <p>
+          <span>
             <Divider />
             <br />
 
@@ -261,7 +265,7 @@ function App() {
                 src={nft_metadata.extension.image}
                 padding='5px' />
             </div>
-          </p>
+          </span>
         )}
         <ConnectWallet />
       </Paper>
