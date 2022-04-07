@@ -54,7 +54,7 @@ Now that you have successfully switched to the testing wallet on LocalTerra, you
 
 Before you may deploy your contract and begin minting your NFT, you must make a change to the `config.terrain.json` file in this repository. Open this file and find the instantiate message section below.
 
-```
+```json
 "instantiateMsg": {
   "name":"NFT Collection Name",
   "symbol":"NFTSYMBOL",
@@ -70,7 +70,7 @@ You must first update the desired _name_ and _symbol_ that will correspond to yo
 
 In this tutorial, we will be minting an NFT of Luna, the native token of Terraform Labs, to our Cryptocurrency Token NFTs collection. Therefore, we will update the parameters in the instantiate message to the following:
 
-```
+```json
 "instantiateMsg": {
   "name":"Cryptocurrency Token NFTs",
   "symbol":"TOKENS",
@@ -116,7 +116,7 @@ Now that you have minted your NFT, you may interact with it via the [NFT webpage
 
 Next, click on `Add tokens >` and you will be presented with a pop-up box with a search bar. In this search bar, you will be pasting in your contract address. This can be found in this repository in the `refs.terrain.json` file next to the **default** key.
 
-```
+```json
 {
   "localterra": {
     "cw721-metadata-onchain": {
