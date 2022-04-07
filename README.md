@@ -68,7 +68,7 @@ You must first update the desired _name_ and _symbol_ that will correspond to yo
   <img src="readme_images/copy_address.png" alt="Copy Wallet Address" style="400px; height: 501px; padding: 40px"/>
 </div>
 
-In this tutorial, we will be minting an NFT of Luna, the native token of Terraform Labs, to our Cryptocurrency Token NFTs collection. Therefore,we will update the parameters in the instantiate message to the following:
+In this tutorial, we will be minting an NFT of Luna, the native token of Terraform Labs, to our Cryptocurrency Token NFTs collection. Therefore, we will update the parameters in the instantiate message to the following:
 
 ```
 "instantiateMsg": {
@@ -98,7 +98,7 @@ Once the contract deployment is successfully completed, you may change into the 
 
 As shown above, you may fill out all of the necessary information on the form to mint your first NFT. ID may be any value that you would like to correspond to the ID of the new NFT. The Owner Address is the wallet address which will be the owner of the newly minted NFT (our test1 wallet address in this case). You may then enter a name for the NFT as well as input its corresponding URL.
 
-<sub>**NFT URL Note**: _In general, many prefer to host their NFTs on IPFS (Interplanetary File System). You may use a variety of resources in order to post an NFT on IPFS. One service that you may utilize is [pinata](https://www.pinata.cloud/). In this example, I have used an image available at [terra.money](https://www.terra.money/)._</sub>
+<sub>**NFT URL Note**: _In general, many prefer to host their NFTs on IPFS (Interplanetary File System). You may use a variety of resources in order to post an NFT on IPFS. One service that you may utilize is [Pinata](https://www.pinata.cloud/). In this example, I have used an image available at [terra.money](https://www.terra.money/)._</sub>
 
 Now, you are ready to mint your NFT! Click on the _Mint NFT_ button which will make your Terra Station extension pop up to request confirmation of the transaction. Click on the _Post_ button from your Terra Station extension and you will be presented with information on your newly minted NFT!
 
