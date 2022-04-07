@@ -1,4 +1,4 @@
-# How to Mint Your Very Own NFT on the Terra Blockchain
+# How to Mint an NFT on the Terra Blockchain
 
 NFTs have been generating a lot of buzz in the blockchain community for some time now, particularly with their use in trading digital art. NFTs, or non-fungible tokens, are unique digital assets that may be showcased and bought/sold on the blockchain. Purchasing an NFT gives you ownership over the unique digital creation, somewhat similar to buying a distinct painting or art piece.
 
