@@ -15,7 +15,7 @@ You will also need to install [LocalTerra](https://github.com/terra-money/LocalT
 After installing the above dependencies, you may clone this repository, which contains the smart contract with NFT minting functionality as well as the corresponding front-end application, to the directory of your choice utilizing the following command:
 
 ```
-git clone https://github.com/terran6/nft_on_terra.git
+git clone https://github.com/terran6/nft-on-terra.git
 ```
 
 Change directory into the cloned repository and run the command `npm install` in your terminal to install all relevant Node dependencies. If you have not installed npm (Node Package Manager) on your computer, you may find instructions on how to do so based on your operating system [here](https://kinsta.com/blog/how-to-install-node-js/).
