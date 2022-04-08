@@ -12,7 +12,7 @@ These instructions assume that you have already set up a Terra Station wallet in
 
 You will also need to install [LocalTerra](https://github.com/terra-money/LocalTerra), a Terra blockchain and ecosystem which runs on your personal computer for testing, and [Terrain](https://github.com/terra-money/terrain), a Terra development environment for smart contract development. Be sure to follow the instructions to install all necessary dependencies for both LocalTerra as well as Terrain and ensure that they execute properly on your system.
 
-After installing the above dependencies, you may clone this repository to the directory of your choice utilizing the following command:
+After installing the above dependencies, you may clone this repository, which contains the smart contract with NFT minting functionality as well as the corresponding front-end application, to the directory of your choice utilizing the following command:
 
 ```
 git clone https://github.com/terran6/nft_on_terra.git
