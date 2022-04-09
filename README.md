@@ -32,7 +32,7 @@ There are a few changes you have to make before you may deploy your smart contra
 Open the Terra Station extension on your Google Chrome web browser. Click on the settings icon in the upper right-hand corner and select the **localterra** network.
 
 <div align="center">
-  <img src="readme_images/extension_localterra.png" alt="Switch to LocalTerra" style="width: 400px; padding: 40px"/>
+  <img src="readme_images/extension_localterra.png" alt="Switch to LocalTerra" style="border:1px solid black; width: 400px; margin: 10px 10px 20px 10px;"/>
 </div>
 
 ### Switch to Test Wallet
@@ -40,8 +40,8 @@ Open the Terra Station extension on your Google Chrome web browser. Click on the
 Next, you will click on _Switch wallet_, then click on the drop down menu that appears in the subsequent popup and finally select the test1 wallet from the drop down list that appears.
 
 <div align="center">
-  <img src="readme_images/switch_wallet.png" alt="Switch Wallet" style="width: 400px; padding: 40px"/>
-  <img src="readme_images/test_wallet.png" alt="Select Test Wallet" style="width: 400px; padding: 40px"/>
+  <img src="readme_images/switch_wallet.png" alt="Switch Wallet" style="border:1px solid black; width: 400px; margin: 10px 10px 20px 10px;"/>
+  <img src="readme_images/test_wallet.png" alt="Select Test Wallet" style="border:1px solid black; width: 400px; margin: 10px 10px 20px 10px;"/>
 </div>
 
 Now that you have successfully switched to the testing wallet on LocalTerra, you have setup your environment to be able to deploy your smart contract.
@@ -65,7 +65,7 @@ Before you may deploy your contract and begin minting your NFT, you must make a 
 You must first update the desired _name_ and _symbol_ that will correspond to your minted NFT. Also, the _minter_ will have to be updated to your test1 wallet address. This may be copied directly from your Terra Station extension.
 
 <div align="center">
-  <img src="readme_images/copy_address.png" alt="Copy Wallet Address" style="width: 400px; padding: 40px"/>
+  <img src="readme_images/copy_address.png" alt="Copy Wallet Address" style="border:1px solid black; width: 400px; margin: 10px 10px 20px 10px;"/>
 </div>
 
 In this tutorial, we will be minting an NFT of Luna, the native token of Terraform Labs, to our Cryptocurrency Token NFTs collection. Therefore, we will update the parameters in the instantiate message to the following:
@@ -93,7 +93,7 @@ terrain deploy cw721-metadata-onchain --signer test1
 Once the contract deployment is successfully completed, you may change into the `frontend` directory. From here, you must run `npm install` to install all necessary Node dependencies. Finally, you may run the command `npm start` to start up the NFT minting application.
 
 <div align="center">
-  <img src="readme_images/application.png" alt="NFT Minting Application" style="width: 400px; padding: 40px"/>
+  <img src="readme_images/application.png" alt="NFT Minting Application" style="border:1px solid black; width: 400px; margin: 10px 10px 20px 10px;"/>
 </div>
 
 As shown above, you may fill out all of the necessary information on the form to mint your first NFT. ID may be any value that you would like to correspond to the ID of the new NFT. The Owner Address is the wallet address which will be the owner of the newly minted NFT (our test1 wallet address in this case). You may then enter a name for the NFT as well as input its corresponding URL.
@@ -103,7 +103,7 @@ As shown above, you may fill out all of the necessary information on the form to
 Now, you are ready to mint your NFT! Click on the _Mint NFT_ button which will make your Terra Station extension pop up to request confirmation of the transaction. Click on the _Post_ button from your Terra Station extension and you will be presented with information on your newly minted NFT!
 
 <div align="center">
-  <img src="readme_images/nft_minted.png" alt="Minted NFT" style="width: 400px; padding: 40px"/>
+  <img src="readme_images/nft_minted.png" alt="Minted NFT" style="border:1px solid black; width: 400px; margin: 10px 10px 20px 10px;"/>
 </div>
 
 ## View Your New NFT
@@ -111,7 +111,7 @@ Now, you are ready to mint your NFT! Click on the _Mint NFT_ button which will m
 Now that you have minted your NFT, you may interact with it via the [NFT webpage](https://station.terra.money/nft) on the Terra Station website. If your wallet is not already connected, make sure to click on the `Connect` button in the upper right-hand corner of the screen and select your Terra Station Wallet.
 
 <div align="center">
-  <img src="readme_images/connect_wallet.png" alt="Connect Wallet" style="width: 400px; padding: 40px"/>
+  <img src="readme_images/connect_wallet.png" alt="Connect Wallet" style="border:1px solid black; width: 400px; margin: 10px 10px 20px 10px;"/>
 </div>
 
 Next, click on `Add tokens >` and you will be presented with a pop-up box with a search bar. In this search bar, you will be pasting in your contract address. This can be found in this repository in the `refs.terrain.json` file next to the **default** key.
@@ -132,13 +132,13 @@ Next, click on `Add tokens >` and you will be presented with a pop-up box with a
 Copy this address, paste it into the search bar and click on the `+` button located next to the name of your NFT collection.
 
 <div align="center">
-  <img src="readme_images/nft_search.png" alt="Search NFT Collection" style="width: 400px; padding: 40px"/>
+  <img src="readme_images/nft_search.png" alt="Search NFT Collection" style="border:1px solid black; width: 400px; margin: 10px 10px 20px 10px;"/>
 </div>
 
 Now, you may close out this window and you will be presented with information on your NFT collection.
 
 <div align="center">
-  <img src="readme_images/nft_station.png" alt="NFT Collection" style="width: 400px; padding: 40px"/>
+  <img src="readme_images/nft_station.png" alt="NFT Collection" style="border:1px solid black; width: 400px; margin: 10px 10px 20px 10px;"/>
 </div>
 
 As shown in the image above, we have our NFT presented in our Cryptocurrency Token NFTs collection. From here, we may `View` relevant information about our NFT as well as `Send` our NFT to any specified wallet address. You may utilize the application to mint even more NFTs for your collection as desired and interact with them on this webpage.
