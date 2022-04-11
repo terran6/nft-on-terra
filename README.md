@@ -1,8 +1,8 @@
 # Minting an NFT on the Terra Blockchain
 
-NFTs have been generating a lot of buzz in the blockchain community for some time now, particularly with their use in trading digital art. NFTs, or non-fungible tokens, are unique digital assets that may be showcased and bought/sold on the blockchain. Purchasing an NFT gives you ownership over the unique digital creation, somewhat similar to buying a distinct painting or art piece.
+NFTs have been generating a lot of buzz in the blockchain community for some time now, particularly in the digital art space. NFTs, or non-fungible tokens, are unique digital assets that may be showcased and bought/sold on the blockchain. Purchasing an NFT gives you ownership over the unique digital creation, somewhat similar to buying a distinct painting or art piece.
 
-In this tutorial, we will go over how you may mint your own NFT. Transfering your NFT to the Terra blockchain allows for exposure to millions of users who utilize the Terra ecosystem worldwide.
+In this tutorial, we will go over how you may transfer your digital art to the blockchain, minting your own NFT. Transfering your NFT to the Terra blockchain allows for exposure to millions of users who utilize the Terra ecosystem worldwide.
 
 If you would like to view available collections that are on sale on the Terra blockchain, you may navigate to [randomearth marketplace](https://randomearth.io/collections).
 
@@ -70,7 +70,7 @@ Before you may deploy your contract and begin minting your NFT, you must make a 
 }
 ```
 
-You must first update the desired _name_ and _symbol_ that will correspond to your minted NFT. Also, the _minter_ will have to be updated to your test1 wallet address. This may be copied directly from your Terra Station extension.
+You must first update the _name_ and _symbol_ that will correspond to your NFT collection with which your minted NFTs will be associated. Also, the _minter_ will have to be updated to your test1 wallet address. This may be copied directly from your Terra Station extension.
 
 <div align="center">
   <kbd>
@@ -114,7 +114,7 @@ As shown above, you may fill out all of the necessary information on the form to
 
 <sub>**NFT URL Note**: _In general, many prefer to host their NFTs on IPFS (Interplanetary File System). You may use a variety of resources in order to post an NFT on IPFS. One service that you may utilize is [Pinata](https://www.pinata.cloud/). In this example, I have used an image available at [terra.money](https://www.terra.money/)._</sub>
 
-Now, you are ready to mint your NFT! Click on the _Mint NFT_ button which will make your Terra Station extension pop up to request confirmation of the transaction. Click on the _Post_ button from your Terra Station extension and you will be presented with information on your newly minted NFT!
+Now, you are ready to mint your NFT! Click on the `Mint NFT` button which will make your Terra Station extension pop up to request confirmation of the transaction. Click on the `Post` button from your Terra Station extension and you will be presented with information on your newly minted NFT!
 
 <div align="center">
   <kbd>
