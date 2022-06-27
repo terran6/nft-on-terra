@@ -1,13 +1,13 @@
 import './App.css'
 
-import { useState } from 'react'
+import { useState, useMemo } from 'react'
 import {
   useWallet,
   WalletStatus,
   useConnectedWallet,
+  useLCDClient,
 } from '@terra-money/wallet-provider'
-import * as execute from './contract/execute'
-import * as query from './contract/query'
+import { Cw721MetadataOnchainClient } from './contract/NFTClient'
 import { ConnectWallet } from './components/ConnectWallet'
 import {
   Alert, AlertTitle, Button, Collapse, Divider,
@@ -15,8 +15,11 @@ import {
 } from '@mui/material'
 import CloseIcon from '@mui/icons-material/Close'
 import CircularProgress from '@mui/material/CircularProgress'
+import { contractAddress } from './contract/address'
 
 function App() {
+
+  const lcdClient = useLCDClient()
 
   const [updating, setUpdating] = useState(false)
   const [token_id, setTokenId] = useState('')
@@ -29,40 +32,47 @@ function App() {
   const { status } = useWallet()
 
   const connectedWallet = useConnectedWallet()
+  const nftClient = useMemo(() => {
+    if (!connectedWallet) {
+      return;
+    }
+    return new Cw721MetadataOnchainClient(
+      lcdClient,
+      connectedWallet,
+      contractAddress(connectedWallet)
+    );
+  }, [lcdClient, connectedWallet]);
 
   const onClickMint = async () => {
     setNFTMetadata(null)
     setUpdating(true)
     setError('')
     setOpen(false)
-    const response = await execute.mint(
-      connectedWallet,
-      token_id,
-      owner_address,
-      nft_name,
-      image_url
-    )
-    if (response.code !== 0) {
-      const error_message = response.raw_log
-      switch (true) {
-        case error_message.indexOf('token_id already claimed') !== -1:
-          setError('Token ID Already Claimed.')
-          break
-        case error_message.indexOf('addr_validate errored') !== -1:
-          setError('Owner Address Not Valid.')
-          break
-        default:
-          setError(`${response.raw_log}.`)
+    try {
+      await nftClient.mint({
+        extension: {
+          name: nft_name,
+          image: image_url,
+        },
+        owner: owner_address,
+        tokenId: token_id,
+      })
+    } catch(e) {
+      if (e.message.includes('token_id already claimed')) {
+        setError('Token ID Already Claimed.')
+      } else if (e.message.includes('addr_validate errored')) {
+        setError('Owner Address Not Valid.')
+      } else {
+        setError(e.message)
       }
       setOpen(true)
       setUpdating(false)
       return
     }
 
-    const nft_data = await query.nft_info(
-      connectedWallet,
-      token_id
-    )
+    const nft_data = await nftClient.nftInfo({
+      tokenId: token_id
+    })
     setNFTMetadata(nft_data)
     setOpen(true)
     setUpdating(false)
@@ -260,7 +270,7 @@ function App() {
               alignItems: 'center'
             }}>
               <img
-                style={{ maxWidth: '200px' }}
+                style={{ width: '40%' }}
                 alt='NFT'
                 src={nft_metadata.extension.image}
                 padding='5px' />

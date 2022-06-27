@@ -1,4 +1,4 @@
-import { useWallet, WalletStatus } from '@terra-dev/use-wallet'
+import { useWallet, WalletStatus } from '@terra-money/wallet-provider'
 import Button from '@mui/material/Button'
 
 export const ConnectWallet = () => {
