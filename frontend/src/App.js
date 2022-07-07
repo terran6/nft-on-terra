@@ -7,7 +7,7 @@ import {
   useConnectedWallet,
   useLCDClient,
 } from '@terra-money/wallet-provider'
-import { Cw721MetadataOnchainClient } from './contract/NFTClient'
+import { Cw721MetadataOnchainClient } from 'terra-clients'
 import { ConnectWallet } from './components/ConnectWallet'
 import {
   Alert, AlertTitle, Button, Collapse, Divider,
