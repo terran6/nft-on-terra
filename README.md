@@ -24,7 +24,7 @@ Change directory into the cloned repository and run the command `npm install` in
 
 ## Wallet Setup
 
-There are a few changes you will have to make before you can deploy your smart contract and create your first NFT. First, you will need to ensure that [LocalTerra] is active and running on a tab in your terminal throughout this tutorial.  To test your smart contract functionality, you will be utilizing the preconfigured LocalTerra testing wallet `test1`. This wallet will be available on any Terra Station generated wallet. In order to view your test1 wallet, you may navigate to LocalTerra on your Terra Station extension on Google Chrome and switch your wallet to the preconfigured testing wallet.
+There are a few changes you will have to make before you can deploy your smart contract and create your first NFT. First, you will need to ensure that [LocalTerra](https://github.com/terra-money/LocalTerra#readme) is active and running on a tab in your terminal throughout this tutorial.  To test your smart contract functionality, you will be utilizing the preconfigured LocalTerra testing wallet `test1`. This wallet will be available on any Terra Station generated wallet. In order to view your test1 wallet, you may navigate to LocalTerra on your Terra Station extension on Google Chrome and switch your wallet to the preconfigured testing wallet.
 <br/>
 
 ### Change Network to LocalTerra
