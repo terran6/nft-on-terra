@@ -18,13 +18,13 @@ After installing the above dependencies, you may clone this repository, which co
 git clone --depth 1 https://github.com/terran6/nft-on-terra.git
 ```
 
-Change directory into the cloned repository and run the command `npm install` in your terminal to install all relevant Node dependencies. If you have not installed npm (Node Package Manager) on your computer, you may find instructions on how to do so based on your operating system [here](https://kinsta.com/blog/how-to-install-node-js/).
+Change directory into the cloned repository and run the command `npm install` in your terminal to install all relevant Node dependencies. If you have not installed Node.js or npm (Node Package Manager) on your computer, you may find the download link to install the required Node.js LTS version 16 along with npm for your operating system [here](https://nodejs.org/en/blog/release/v16.14.2/).
 <br/>
 <br/>
 
 ## Wallet Setup
 
-There are a few changes you will have to make before you can deploy your smart contract and create your first NFT. First, you will need to ensure that [LocalTerra](https://github.com/terra-money/LocalTerra#readme) is active and running on a tab in your terminal throughout this tutorial.  To test your smart contract functionality, you will be utilizing the preconfigured LocalTerra testing wallet `test1`. This wallet will be available on any Terra Station generated wallet. In order to view your test1 wallet, you may navigate to LocalTerra on your Terra Station extension on Google Chrome and switch your wallet to the preconfigured testing wallet.
+There are a few changes you will have to make before you can deploy your smart contract and create your first NFT. First, you will need to ensure that [LocalTerra](https://github.com/terra-money/LocalTerra#readme) is active and running on a tab in your terminal throughout this tutorial.  To test your smart contract functionality, you will be utilizing the preconfigured LocalTerra testing wallet `test1`. This wallet will be available on any Terra Station generated wallet. In order to view your test1 wallet, you may navigate to LocalTerra on your Terra Station extension on Google Chrome and switch your wallet to the preconfigured test1 wallet.
 <br/>
 
 ### Change Network to LocalTerra
@@ -52,7 +52,7 @@ Next, you will click on `Switch wallet`, then click on `Preconfigured wallets...
 </div>
 <br/>
 
-Now that you have successfully switched to the testing wallet on LocalTerra, you have setup your environment to be able to deploy your smart contract.
+Now that you have successfully switched to the test1 wallet on LocalTerra, you have setup your environment to be able to deploy your smart contract.
 <br/>
 <br/>
 
@@ -110,7 +110,11 @@ Once the contract deployment is successfully completed, you may change into the 
 </div>
 <br/>
 
-As shown above, you may fill out all of the necessary information on the form to mint your first NFT. ID may be any value that you would like to correspond to the ID of the new NFT. The Owner Address is the wallet address which will be the owner of the newly minted NFT (our test1 wallet address in this case). You may then enter a name for the NFT as well as input its corresponding URL.
+As shown above, you may fill out all of the necessary information on the form to mint your first NFT. ID may be any value that you would like to correspond to the ID of the new NFT. The Owner Address is the wallet address which will be the owner of the newly minted NFT (our test1 wallet address in this case). You may then enter a name for the NFT as well as input its corresponding URL. For this tutorial, we will minting an NFT of Luna, the native token of Terra, available at the following URL:
+
+```
+https://assets.terra.money/icon/svg/LUNA.png
+```
 
 <sub>**NFT URL Note**: _In general, many prefer to host their NFTs on IPFS (Interplanetary File System). You may use a variety of resources in order to post an NFT on IPFS. One service that you may utilize is [Pinata](https://www.pinata.cloud/). In this example, I have used an image available at [terra.money](https://www.terra.money/)._</sub>
 
